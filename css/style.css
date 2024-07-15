@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--green-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--red-color);
+}
+
+.navbar-toggler {
+  border: 2px solid #fff;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar {
+  background-color: #19283fdd;
+  backdrop-filter: blur(4px);
+}
+
+.navbar-brand img {
+  width: 80%;
+}
+
+.navbar ul.navbar-nav li.nav-item a.nav-link.active,
+.navbar ul.navbar-nav li.nav-item a.nav-link:hover,
+.navbar ul.navbar-nav li.nav-item a.nav-link:focus {
+  color: var(--green-color) !important;
+}
+
+.navbar .search {
+  color: var(--green-color);
+  border-left: 1px solid var(--green-color);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.landing {
+  background-color: var(--dark-color);
+  min-height: 100vh;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.heading i {
+  color: var(--yellow-color);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.heading p {
+  text-transform: uppercase;
+  color: #000a;
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.heading hr {
+  border: 1.5px solid var(--green-color);
+  width: 120px;
+  opacity: 1;
+}
+
+.features .feat {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.features .feat>div {
+  width: 400px;
+}
+
+.features .feat .icon-holder {
+  min-height: 100px;
+}
+
+.features .feat .icon-holder i {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 8rem;
+}
+
+.features .feat .icon-holder i:first-child {
+  color: var(--section-color);
+}
+
+.features .feat .icon-holder i:last-child {
+  color: var(--green-color);
+  font-size: 3rem;
+}
+
+.features .feat h4 {
+  color: var(--yellow-color);
+}
+
+.work {
+  background-color: var(--section-color);
+}
+
+.work ul li {
+  cursor: pointer;
+  transition: .3s;
+}
+
+.work ul li.active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+
+.work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+
+.work .works .box {
+  width: 250px;
+  height: 130px;
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.work .works .box img {
+  width: 240px;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+
+
+.work .works .box::before {
+  position: absolute;
+  content: attr(data-app);
+  background-color: #33d1cccc;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: var(--red-color);
+  transition: .4s;
+  opacity: 0;
+}
+
+.work .works .box:hover::before {
+  opacity: 1;
+}
+
+.stuff > p {
+  max-width: 500px;
+}
+
+.stuff .image img {
+  max-width: 600px;
+}
+
+.team  {
+  background-color: var(--section-color);
+}
+.team .container > h2 {
+  color: var(--yellow-color);
+}
+.team .team-box h4 {
+  background-color: var(--green-color);
+}
+
+.project {
+  background-color: var(--dark-color);
+}
+.cards {
+  flex-wrap: wrap;
+}
+.cards img {
+  max-width: 400px;
+}
