@@ -13,6 +13,13 @@
   --section-color: #eff7fa;
 }
 
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -209,4 +216,62 @@ input:focus {
 }
 .cards img {
   max-width: 400px;
+}
+.subscribe {
+  background-color: var(--yellow-color);
+}
+/* form.row > p {
+} */
+
+form.row > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--section-color);
+  height: fit-content;
+}
+form.row > input::placeholder {
+  color: var(--section-color);
+}
+
+form.row > button {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+  width: fit-content;
+  height: fit-content;
+}
+
+footer {
+  background-color: var(--dark-color);
+}
+
+footer span {
+  color: var(--yellow-color);
+}
+footer ul * {
+  padding: 4px;
+}
+footer .socials i {
+  background-color: blue;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+footer .socials i:first-child {
+  background-color: #1877f2;
+}
+footer .socials i:nth-child(2) {
+  background-color: #1da1f2;
+}
+footer .socials i:nth-child(3) {
+  background-color: #0077b5;
+}
+footer .socials i:last-child {
+  background-color: #ff0000;
 }
